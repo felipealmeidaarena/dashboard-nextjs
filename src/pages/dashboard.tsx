@@ -60,11 +60,11 @@ export default function Dashboard() {
         <Flex direction='column' height='100vh'>
             <Header />
 
-            <Flex width='100%' my='6' maxWidth={1480} mx='auto' px='6'>
+            <Flex width='100%' my='3' maxWidth={1480} mx='auto' px='10'>
                 <Sidebar />
 
-                <SimpleGrid flex='1' gap='4' minChildWidth='320px' alignItems='flex-start'>
-                    <Box padding='8' backgroundColor='gray.800' borderRadius='8'>
+                <SimpleGrid flex='1' gap='10' minChildWidth='320px' alignItems='flex-start'>
+                    <Box padding={["4", "6"]} backgroundColor='gray.800' borderRadius='8'>
                         <Text fontSize='lg' mb='4'>Inscritos da Semana</Text>
                         <Chart options={options} series={series} type='area' height='160' />
                     </Box>
